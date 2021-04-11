@@ -1,0 +1,89 @@
+
+
+    <form action="/" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="name" placeholder="Ingresa tu nombre" required />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Ingresa tu email" required />
+        </div>
+        <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="" class="form-control" name="edad" placeholder="Ingresa tu edad" required />
+        </div>
+
+        <label for="select" class="form-label">Elije una seccion</label>
+        <select class="form-select select" name="seccion">
+            <option value="fiambreria">Fiambreria</option>
+            <option value="panaderia">Panaderia</option>
+            <option value="rotiseria">Rotiseria</option>
+            <option value="confiteria">Confiteria</option>
+            <option value="carniceria">Carniceria</option>
+            <option value="salon">Salon</option>
+            <option value="cajas">Cajas</option>
+        </select>
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">Elije un horario</h4>
+        <div class="form-check">
+            <label class="form-check-label" for="horarios"><input name="horario" value="manana" type="radio"
+                    class="form-check-input" />
+                06:00 - 14:00
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="horarios"><input name="horario" value="tarde" type="radio"
+                    class="form-check-input" />
+                14:00 - 22:00
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="horarios"><input name="horario" value="noche" type="radio"
+                    class="form-check-input" />
+                22:00 - 06:00</label>
+        </div>
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">Elije una sucursal</h4>
+        <div class="form-check">
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" name="sucursal"
+                    value="carrasco" />Carrasco</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" name="sucursal"
+                    value="pasoMolino" />PasoMolino</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" name="sucursal"
+                    value="airesPuros" />AiresPuros</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" name="sucursal"
+                    value="cerrito" />Cerrito</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" name="sucursal"
+                    value="puntaGorda" />PuntaGorda</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label"><input class="form-check-input" type="checkbox" name="sucursal"
+                    value="malvin" />Malvin</label>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="form-group">
+            <label for="textarea" class="form-label">
+                <h4 class="mb-3">Cuentanos sobre ti</h4>
+            </label>
+            <textarea class="form-control" id="textarea" rows="5" name="info"></textarea>
+        </div>
+
+        <br />
+
+        <button type="submit" class="btn btn-primary">ENVIAR</button>
+    </form>
